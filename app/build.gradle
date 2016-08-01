@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda' // make sure to apply last! -- ref: https://medium.com/android-news/retrolambda-on-android-191cc8151f85#.sngvzrnqp
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        applicationId "purpleblue.com.nytimessearch"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding.enabled = true
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:recyclerview-v7:24.1.1'
+    compile 'jp.wasabeef:recyclerview-animators:2.2.3'
+    compile 'com.android.support:cardview-v7:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.github.bumptech.glide:glide:3.5.2'
+    compile 'com.android.support:support-v4:24.1.1'
+    compile 'com.afollestad.material-dialogs:core:0.8.6.2'
+    compile 'com.barryzhang:temptyview:0.0.1'
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+
+    // Sections
+    // http://stackoverflow.com/questions/20880987/gridview-with-date-wise-separator
+    // https://gist.github.com/gabrielemariotti/e81e126227f8a4bb339c
+    // http://tonicartos.github.io/StickyGridHeaders/
+    // https://github.com/TonicArtos/SuperSLiM/wiki/Getting%20started%20with%20version%200.4
+    // compile 'com.tonicartos:superslim:0.4.13'
+}

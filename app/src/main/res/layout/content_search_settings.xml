@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context=".fragments.SearchSettingsDialogFragment">
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dpBeginDate"
+        android:layout_gravity="center_horizontal"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/sort_order"
+            android:id="@+id/tvSortOrder" />
+
+        <Spinner
+            android:id="@+id/sSortOrder"
+            android:layout_width="wrap_content"
+            android:entries="@array/sort_order_array"
+            android:prompt="@string/sort_order"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/md_blue_400"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/news_desk_values"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tvNewsDeskValues" /-->
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arts"
+        android:id="@+id/cbArts"
+        android:checked="false"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fashion_and_style"
+        android:id="@+id/cbFashionStyle"
+        android:checked="false"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sorts"
+        android:id="@+id/cbSports"
+        android:checked="false"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnSave"
+        android:text="@string/save"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/button_text" />
+
+</LinearLayout>
