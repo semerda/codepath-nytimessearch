@@ -52,8 +52,7 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://github.com/semerda/codepath-nytimessearch/blob/master/misc/nytimessearch-anim.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-*And with Custom New York Times Font for Toolbar Title*
-Not sure which one I like since the NYTimes font makes the UI look busy.
+**And with Custom New York Times Font for Toolbar Title**
 <img src='https://github.com/semerda/codepath-nytimessearch/blob/master/misc/nytimessearch-custom-font.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
