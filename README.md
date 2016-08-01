@@ -1,6 +1,6 @@
 # Project 2 - *NYTimesSearch*
 
-*NYTimesSearch* is an android app that allows a user to search for articles on web using simple filters. The app utilizes [New York Times Search API](http://developer.nytimes.com/docs/read/article_search_api_v2).
+*NYTimesSearch** is an android app that allows a user to search for articles on web using simple filters. The app utilizes [New York Times Search API](http://developer.nytimes.com/docs/read/article_search_api_v2).
 
 Time spent: **∞** hours spent in total
 
@@ -44,12 +44,17 @@ The following **additional** features are implemented:
 * [x] Custom TimeClass to show Age of Articles eg. 2 days ago.
 * [x] CardView to display Articles in a raised form.
 * [x] TEmptyView - A easy way to setEmptyView to ListView, GridView or RecyclerView
+* [x] Custom New York Times Font for Toolbar Title
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
 <img src='https://github.com/semerda/codepath-nytimessearch/blob/master/misc/nytimessearch-anim.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+*And with Custom New York Times Font for Toolbar Title*
+Not sure which one I like since the NYTimes font makes the UI look busy.
+<img src='https://github.com/semerda/codepath-nytimessearch/blob/master/misc/nytimessearch-custom-font.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

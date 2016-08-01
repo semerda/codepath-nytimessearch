@@ -1,6 +1,7 @@
 package purpleblue.com.nytimessearch.activities;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.MenuItemCompat;
@@ -15,6 +16,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.GridView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.barryzhang.temptyview.TEmptyView;
@@ -59,6 +61,12 @@ public class SearchActivity extends AppCompatActivity {
         getSupportActionBar().setLogo(R.mipmap.purpleblue_com);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
         getSupportActionBar().setTitle("Today's News");
+
+        // Custom New York Times Font for Toolbar Title
+        Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/newyorktimes.ttf");
+        TextView tvTitle = (TextView) toolbar.getChildAt(0);
+        tvTitle.setTextSize(32);
+        tvTitle.setTypeface(custom_font);
 
         setupViews();
         //initEmptyView();
